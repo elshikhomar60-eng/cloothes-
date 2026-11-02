@@ -1,0 +1,1 @@
+module.exports={content:['./app/**/*.{js,jsx}','./components/**/*.{js,jsx}'],theme:{extend:{colors:{stone:'#EEEDE8',mist:'#DAD9D2',ink:'#1A1A1A',green:'#12372F',brass:'#BE9645',brass2:'#8F6D22',crimson:'#A6192E'},fontFamily:{sans:['var(--f-body)','sans-serif'],display:['var(--f-display)','var(--f-body)','sans-serif']}}},plugins:[]};
