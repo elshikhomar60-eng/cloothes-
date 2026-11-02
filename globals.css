@@ -1,0 +1,15 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{background:#EEEDE8;color:#1A1A1A}
+@layer components{
+.btn{@apply inline-flex items-center justify-center gap-2 bg-green px-7 py-3 font-semibold text-stone transition hover:bg-brass hover:text-ink disabled:opacity-40}
+.btn-out{@apply inline-flex items-center justify-center gap-2 border border-ink px-7 py-3 font-semibold transition hover:bg-ink hover:text-stone}
+.input{@apply w-full border border-ink/25 bg-white px-4 py-3 outline-none focus:border-brass}
+.lbl{@apply mb-1 block text-sm font-medium text-ink/70}
+.card{@apply border border-mist bg-white p-4}
+.wrap{@apply mx-auto max-w-7xl px-4 md:px-8}
+.h2{@apply font-display text-3xl font-bold md:text-4xl}
+}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.hero-in>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.hero-in>*:nth-child(2){animation-delay:.12s}.hero-in>*:nth-child(3){animation-delay:.24s}
+:focus-visible{outline:2px solid #BE9645;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
